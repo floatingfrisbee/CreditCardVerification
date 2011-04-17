@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="allinfodiv" class="allinfodivclass">
+    
+    <div class="titlediv">Name Verification</div>
+
+    <div class="borderlesssectiondiv">
+        <div id="verifybutton" class="buttondivclass">Verify</div>
+        <div id="clearbutton" class="buttondivclass">Clear</div>
+        <div id="populatebutton" class="buttondivclass">Populate</div>
+    </div>
+
+    <div id="namediv" class="sectiondiv">
+        <div class="oneline">First Name <input id="fnametb" type="text" class="rightfloater"/></div>
+        <div class="oneline">Last Name <input id="lnametb" type="text" class="rightfloater"/></div>
+    </div> 
+    
+    <div id="notemessagediv" class="sectiondiv notemessagediv">
+        Credit card related information you provide is used only to verify your identity and is not 
+        persisted on our systems or used by us in any other way. Read more in 
+        our <a href="http://www.opspark.com/Home/PrivacyPolicy">privacy policy</a>.
+    </div> 
+            
+    <div id="creditcardinfodiv" class="sectiondiv">
+
+        <div class="oneline">
+            Card Type
+            <select id="cctypecombo" class="rightfloater">
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">Master Card</option>
+                <option value="American Express">American Express</option>
+                <option value="Discover">Discover</option>
+            </select>
+        </div>
+
+        <div class="oneline">Card Number<input id="cardnumbertb" type="text" class="rightfloater"/></div>
+        <div class="oneline">CVV2 Number<input id="cvv2numbertb" type="text" class="rightfloater"/></div>
+        <div class="oneline">Expiration Date<input id="expdate" type="text" class="rightfloater"/></div>
+    </div>
+    
+    <div class="sectiondiv">
+        <div class="oneline">Street Address<input id="address1" type="text" class="rightfloater"/></div>
+        <div class="oneline">Apt/Suite<input id="address2" type="text" class="rightfloater"/></div>
+        <div class="oneline">City<input id="city" type="text" class="rightfloater"/></div>
+        <div class="oneline">State<input id="state" type="text" class="rightfloater"/></div>
+        <div class="oneline">Zip Code<input id="zipcode" type="text" class="rightfloater"/></div>
+        <div class="oneline">Country<input id="country" type="text" class="rightfloater"/></div>
+    </div>               
+
+</div>

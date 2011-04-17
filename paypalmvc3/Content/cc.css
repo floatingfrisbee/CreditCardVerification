@@ -1,0 +1,79 @@
+﻿select
+{
+    font-family: calibri;
+    font-size: 9pt;
+}
+
+input
+{
+    border-style: hidden;
+    border-width: 0px;
+    background-color: #efefef;
+    color: black;
+    font-family: calibri;
+    font-size: 7pt;
+}
+
+.oneline
+{
+    clear: both;
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+}
+
+.rightfloater
+{
+    float: right;
+}
+
+.leftfloater
+{
+    float: left;
+    clear: none;
+}
+
+.allinfodivclass
+{
+    font-size: 8pt;
+    width: 40%;
+}
+
+.borderlesssectiondiv, .sectiondiv
+{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+    
+.sectiondiv
+{
+    border: 1px solid;
+    border-color: #cccccc;
+}
+
+.titlediv
+{
+    margin: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.buttondivclass
+{
+    background-color: #ffffbb;
+    font-size: 11pt;
+    font-weight: bold;
+    height: 20px;
+    width: 80px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid;
+    margin-right: 2px;
+}
+
+.notemessagediv
+{
+    background-color: #ffffbb;
+}
