@@ -28,7 +28,7 @@ namespace CreditCardUtils.Implementations
             encoder["AMT"] = "100";
             encoder["CREDITCARDTYPE"] = request.CreditCardInfo.Type.ToString();
             encoder["ACCT"] = request.CreditCardInfo.CreditCardNumber;
-            encoder["EXPDATE"] = request.CreditCardInfo.ExpirationDate.Month.ToString() + request.CreditCardInfo.ExpirationDate.Year;
+            encoder["EXPDATE"] = request.CreditCardInfo.ExpirationDate.ToString("MM/yyyy");
             encoder["CVV2"] = request.CreditCardInfo.Cvv2Number;
             encoder["FIRSTNAME"] = request.FirstName;
             encoder["LASTNAME"] = request.LastName;

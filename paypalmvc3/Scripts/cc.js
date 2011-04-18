@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $('#expdate').datepicker({ dateFormat: "mm/dd/yy" });
-    $('#expdate').val("04/30/2012");
+    $('#expdate').val("04/30/2011");
 
     $('#verifybutton').click(OnVerify);
     $('#clearbutton').click(OnClear);
@@ -55,21 +55,21 @@ function OnClear() {
     $('#cctypecombo').val('Visa');
 
     $('#expdate').datepicker({ dateFormat: "mm/dd/yy" });
-    $('#expdate').val("04/30/2012");
+    $('#expdate').val("04/30/2011");
 }
 
 function OnPopulate() {
-    $('#fnametb').val('Jaspreet');
-    $('#lnametb').val('Bakshi');
+    $('#fnametb').val('Goozon');
+    $('#lnametb').val('Softel');
     $('#cctypecombo').val('Visa');
     $('#cardnumbertb').val('4683075410516684');
     $('#cvv2numbertb').val('123');
 
     $('#expdate').datepicker({ dateFormat: "mm/dd/yy" });
-    $('#expdate').val("04/30/2012");
+    $('#expdate').val("04/30/2011");
     
-    $('#address1').val('One Infinity Drive');
-    $('#address2').val('2363');
+    $('#address1').val('1 Main St.');
+    $('#address2').val('');
     $('#city').val('San Jose');
     $('#state').val('CA');
     $('#zipcode').val('95131');
