@@ -1,6 +1,6 @@
 ﻿namespace CreditCardUtils
 {
-    class CreditCardAuthorizationReponse : ICreditCardAuthorizationResponse
+    internal class CreditCardAuthorizationReponse : ICreditCardAuthorizationResponse
     {
         public CreditCardAuthorizationReponse(bool isSuccess)
         {

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using CreditCardUtils;
+using CreditCardUtils.Enumerations;
 
 namespace paypalmvc3.Controllers
 {
@@ -16,6 +14,16 @@ namespace paypalmvc3.Controllers
         public ActionResult About()
         {
             return View();
+        }
+
+        // 
+        // POST /home/verify 
+        //
+        [HttpPost]
+        public ActionResult Verify(CreditCardAuthorizationRequest authorizationRequest)
+        {
+            var provider = CreditCardProviderFactory.Create(CreditCardGatewayProviders.PayPal);
+            return Json(provider.VerifyCreditCardInfo(authorizationRequest));
         }
     }
 }

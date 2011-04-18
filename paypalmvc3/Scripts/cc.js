@@ -8,7 +8,43 @@
 });
 
 function OnVerify() {
-    alert('verify');
+    var args = new Object();
+
+    args.FirstName = $('#fnametb').val();
+    args.LastName = $('#lnametb').val();
+
+    args.CreditCardInfo = new Object();
+    args.CreditCardInfo.Type = $('#cctypecombo').val();
+    args.CreditCardInfo.CreditCardNumber = $('#cardnumbertb').val();
+    args.CreditCardInfo.Cvv2Number = $('#cvv2numbertb').val();
+    args.CreditCardInfo.ExpirationDate = $('#expdate').val();
+    
+    args.AddressInfo = new Object();
+    args.AddressInfo.Address1 = $('#address1').val();
+    args.AddressInfo.Address2 = $('#address2').val();
+    args.AddressInfo.City = $('#city').val();
+    args.AddressInfo.State = $('#state').val();
+    args.AddressInfo.ZipCode = $('#zipcode').val();
+    args.AddressInfo.Country = $('#country').val();
+
+    var x = new Object();
+    x.authorizationRequest = args;
+
+    $.ajax({    
+        url: 'home/verify',
+        type: 'POST',
+        data: JSON.stringify(x),
+        dataType: 'json',
+        contentType: 'application/json; charset=utf-8',
+        success: OnVerifySuccess,
+        error: function () {
+            alert("error");
+        }
+    });
+}
+
+function OnVerifySuccess(){
+    alert("verify success");
 }
 
 function OnClear() {

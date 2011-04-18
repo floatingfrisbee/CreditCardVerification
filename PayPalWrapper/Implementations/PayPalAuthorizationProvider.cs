@@ -25,7 +25,7 @@ namespace CreditCardUtils.Implementations
 
             // Add request-specific fields to the request.
             encoder["PAYMENTACTION"] = CreditCardPaymentActions.Authorization.ToString();
-            encoder["AMT"] = "0.01";
+            encoder["AMT"] = "100";
             encoder["CREDITCARDTYPE"] = request.CreditCardInfo.Type.ToString();
             encoder["ACCT"] = request.CreditCardInfo.CreditCardNumber;
             encoder["EXPDATE"] = request.CreditCardInfo.ExpirationDate.Month.ToString() + request.CreditCardInfo.ExpirationDate.Year;
@@ -36,7 +36,7 @@ namespace CreditCardUtils.Implementations
             encoder["CITY"] = request.AddressInfo.City;
             encoder["STATE"] = request.AddressInfo.State;
             encoder["ZIP"] = request.AddressInfo.ZipCode;
-            encoder["COUNTRYCODE"] = "US";
+            encoder["COUNTRYCODE"] = request.AddressInfo.Country;
             encoder["CURRENCYCODE"] = "USD";
 
             // Execute the API operation and obtain the response.

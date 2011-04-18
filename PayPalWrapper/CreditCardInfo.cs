@@ -5,6 +5,9 @@ namespace CreditCardUtils
 {
     public class CreditCardInfo : ICreditCardInfo
     {
+        public CreditCardInfo()
+        {}
+
         public CreditCardInfo(CreditCardTypes creditCardType, string creditCardNumber, string cVV2Number, DateTime expirationDate)
         {
             Type = creditCardType;
@@ -13,9 +16,9 @@ namespace CreditCardUtils
             ExpirationDate = expirationDate;
         }
 
-        public CreditCardTypes Type { get; private set; }  
-        public string CreditCardNumber { get; private set; }
-        public string Cvv2Number { get; private set; }
-        public DateTime ExpirationDate { get; private set; }
+        public CreditCardTypes Type { get; set; }  
+        public string CreditCardNumber { get; set; }
+        public string Cvv2Number { get; set; }
+        public DateTime ExpirationDate { get; set; }
     }
 }
