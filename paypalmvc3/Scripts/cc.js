@@ -7,7 +7,17 @@
     $('#populatebutton').click(OnPopulate);
 });
 
+function Block() {
+    $('#allinfodiv').block({
+        message: '<h1>Processing</h1>',
+        css: { border: '1px solid #a00' }
+    });
+}
+
 function OnVerify() {
+    
+    Block();
+
     var args = new Object();
 
     args.FirstName = $('#fnametb').val();
@@ -38,13 +48,13 @@ function OnVerify() {
         contentType: 'application/json; charset=utf-8',
         success: OnVerifySuccess,
         error: function () {
-            alert("error");
+            $('#allinfodiv').unblock();
         }
     });
 }
 
-function OnVerifySuccess(){
-    alert("verify success");
+function OnVerifySuccess(jsonResponse){
+    $('#allinfodiv').unblock(); 
 }
 
 function OnClear() {
