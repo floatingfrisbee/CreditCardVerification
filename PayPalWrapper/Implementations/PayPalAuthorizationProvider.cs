@@ -20,15 +20,20 @@ namespace CreditCardUtils.Implementations
             caller.APIProfile = profile;
 
             var encoder = new NVPCodec();
-            encoder["VERSION"] = "51.0";
+
+            encoder["SIGNATURE"] = "AzbQABSL2jEPPHG.eDus2jfMT0xEAUITxvhhUWGmd3DHxaPXx6Zs1MPR";
+            encoder["USER"] = "mv1_1302977681_biz_api1.hotmail.com";
+            encoder["PWD"] = "1302977698";
+            encoder["VERSION"] = "60.0";
             encoder["METHOD"] = "DoDirectPayment";
 
             // Add request-specific fields to the request.
             encoder["PAYMENTACTION"] = CreditCardPaymentActions.Authorization.ToString();
             encoder["AMT"] = "100";
             encoder["CREDITCARDTYPE"] = request.CreditCardInfo.Type.ToString();
+            encoder["IPADDRESS"] = "192.168.0.1";
             encoder["ACCT"] = request.CreditCardInfo.CreditCardNumber;
-            encoder["EXPDATE"] = request.CreditCardInfo.ExpirationDate.ToString("MM/yyyy");
+            encoder["EXPDATE"] = request.CreditCardInfo.ExpirationDate.ToString("MMyyyy");
             encoder["CVV2"] = request.CreditCardInfo.Cvv2Number;
             encoder["FIRSTNAME"] = request.FirstName;
             encoder["LASTNAME"] = request.LastName;

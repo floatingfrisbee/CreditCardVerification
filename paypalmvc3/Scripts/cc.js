@@ -53,8 +53,18 @@ function OnVerify() {
     });
 }
 
-function OnVerifySuccess(jsonResponse){
-    $('#allinfodiv').unblock(); 
+function OnVerifySuccess(authResponse){
+    $('#allinfodiv').unblock();
+
+    if (authResponse.IsSuccess) {
+        $('#notemessagediv').html('<b>Thank You!</b> Your credentials have been verified. Credit card related information you provide is used only to verify your identity and is not persisted on our systems or used by us in any other way. Read more in our <a href="http://www.opspark.com/Home/PrivacyPolicy">privacy policy</a>');
+    }
+    else {
+        $('#notemessagediv').html('<b>Sorry!</b> Your credentials could not be verified. Please check and ensure that the information below is accurate');
+    }
+
+    $('#notemessagediv').effect("pulsate", { times: 1 }, 1000);
+
 }
 
 function OnClear() {
@@ -69,10 +79,10 @@ function OnClear() {
 }
 
 function OnPopulate() {
-    $('#fnametb').val('Goozon');
-    $('#lnametb').val('Softel');
+    $('#fnametb').val('John');
+    $('#lnametb').val('Smith');
     $('#cctypecombo').val('Visa');
-    $('#cardnumbertb').val('4683075410516684');
+    $('#cardnumbertb').val('4716195341648694');
     $('#cvv2numbertb').val('123');
 
     $('#expdate').datepicker({ dateFormat: "mm/dd/yy" });
