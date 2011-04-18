@@ -77,3 +77,10 @@ input
 {
     background-color: #ffffbb;
 }
+
+.blockstyle
+{
+    font-family: calibri;
+    font-size: 9pt;
+    border: 1px solid;
+}

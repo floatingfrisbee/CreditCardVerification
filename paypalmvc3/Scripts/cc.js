@@ -9,8 +9,8 @@
 
 function Block() {
     $('#allinfodiv').block({
-        message: '<h1>Processing</h1>',
-        css: { border: '1px solid #a00' }
+        message: 'Verifying Your Information',
+        class: 'blockstyle'
     });
 }
 
