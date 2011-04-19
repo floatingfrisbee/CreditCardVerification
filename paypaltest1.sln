@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardUtils", "PayPalWrapper\CreditCardUtils.csproj", "{5CC9852D-BD91-4EA0-8DA9-FE455D9F0FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paypalmvc3", "paypalmvc3\paypalmvc3.csproj", "{A63711B8-46D4-4369-8655-D590595289FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paypalmvc3.Tests", "paypalmvc3.Tests\paypalmvc3.Tests.csproj", "{F4C697D2-2D36-478E-BD07-0B2CABA896DE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheApp", "paypalmvc3\TheApp.csproj", "{583B23A8-5309-451B-9CCD-56EC1AFF1FCE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7714AD55-C4C6-404D-ABB5-7B85C5B6F40D}"
@@ -23,14 +19,6 @@ Global
 		{5CC9852D-BD91-4EA0-8DA9-FE455D9F0FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CC9852D-BD91-4EA0-8DA9-FE455D9F0FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CC9852D-BD91-4EA0-8DA9-FE455D9F0FDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A63711B8-46D4-4369-8655-D590595289FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A63711B8-46D4-4369-8655-D590595289FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A63711B8-46D4-4369-8655-D590595289FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A63711B8-46D4-4369-8655-D590595289FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4C697D2-2D36-478E-BD07-0B2CABA896DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4C697D2-2D36-478E-BD07-0B2CABA896DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4C697D2-2D36-478E-BD07-0B2CABA896DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4C697D2-2D36-478E-BD07-0B2CABA896DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{583B23A8-5309-451B-9CCD-56EC1AFF1FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{583B23A8-5309-451B-9CCD-56EC1AFF1FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{583B23A8-5309-451B-9CCD-56EC1AFF1FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU

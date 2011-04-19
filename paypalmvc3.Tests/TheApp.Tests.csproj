@@ -56,9 +56,9 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\paypalmvc3\paypalmvc3.csproj">
-      <Project>{A63711B8-46D4-4369-8655-D590595289FD}</Project>
-      <Name>paypalmvc3</Name>
+    <ProjectReference Include="..\paypalmvc3\TheApp.csproj">
+      <Project>{583B23A8-5309-451B-9CCD-56EC1AFF1FCE}</Project>
+      <Name>TheApp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
