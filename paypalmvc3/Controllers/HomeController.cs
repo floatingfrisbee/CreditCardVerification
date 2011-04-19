@@ -4,6 +4,7 @@ using CreditCardUtils.Enumerations;
 
 namespace TheApp.Controllers
 {
+    [Common.RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()

@@ -150,6 +150,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{648CF164-C4D9-4480-AF64-EE57DDA6EF19}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PayPalWrapper\CreditCardUtils.csproj">
       <Project>{5CC9852D-BD91-4EA0-8DA9-FE455D9F0FDC}</Project>
       <Name>CreditCardUtils</Name>
