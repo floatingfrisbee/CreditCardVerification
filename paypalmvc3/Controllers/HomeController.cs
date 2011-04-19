@@ -4,9 +4,9 @@ using CreditCardUtils.Enumerations;
 
 namespace paypalmvc3.Controllers
 {
+    [RequireHttps]
     public class HomeController : Controller
     {
-        [RequireHttps]
         public ActionResult Index()
         {
             return View();
