@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using paypalmvc3;
-using paypalmvc3.Controllers;
+using TheApp.Controllers;
 
-namespace paypalmvc3.Tests.Controllers
+namespace TheApp.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Routing;
 using System.Web.Security;
-using paypalmvc3.Models;
+using TheApp.Models;
 
-namespace paypalmvc3.Controllers
+namespace TheApp.Controllers
 {
     public class AccountController : Controller
     {

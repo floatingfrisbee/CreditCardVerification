@@ -2,7 +2,7 @@
 using CreditCardUtils;
 using CreditCardUtils.Enumerations;
 
-namespace paypalmvc3.Controllers
+namespace TheApp.Controllers
 {
     public class HomeController : Controller
     {

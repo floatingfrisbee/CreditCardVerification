@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace paypalmvc3.Models
+namespace TheApp.Models
 {
 
     public class ChangePasswordModel
