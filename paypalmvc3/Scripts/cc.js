@@ -67,7 +67,7 @@ function OnVerifySuccess(successResponse){
         $('#notemessagediv').html('<b>Sorry!</b> Your credentials could not be verified. Please check and ensure that the information below is accurate');
     }
 
-    $('#notemessagediv').effect("pulsate", { times: 1 }, 1000);
+    $('#notemessagediv').effect("pulsate", { times: 1 }, 500);
 }
 
 function OnClear() {
@@ -79,9 +79,13 @@ function OnClear() {
 
     $('#expdate').datepicker({ dateFormat: "mm/dd/yy" });
     $('#expdate').val("04/30/2011");
+
+    $('input').effect("pulsate", { times: 1 }, 200);
 }
 
 function OnPopulate() {
+    $('input').effect("pulsate", { times: 1 }, 200);
+
     $('#fnametb').val('John');
     $('#lnametb').val('Smith');
     $('#cctypecombo').val('Visa');
