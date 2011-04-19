@@ -6,6 +6,7 @@ namespace paypalmvc3.Controllers
 {
     public class HomeController : Controller
     {
+        [RequireHttps]
         public ActionResult Index()
         {
             return View();
