@@ -4,7 +4,6 @@ using CreditCardUtils.Enumerations;
 
 namespace paypalmvc3.Controllers
 {
-    [RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()

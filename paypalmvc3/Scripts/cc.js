@@ -85,11 +85,11 @@ function OnPopulate() {
     $('#fnametb').val('John');
     $('#lnametb').val('Smith');
     $('#cctypecombo').val('Visa');
-    $('#cardnumbertb').val('4716195341648694');
+    $('#cardnumbertb').val('4165848437109932'); //4716195341648694
     $('#cvv2numbertb').val('123');
 
     $('#expdate').datepicker({ dateFormat: "mm/dd/yy" });
-    $('#expdate').val("04/30/2011");
+    $('#expdate').val("04/30/2016");
     
     $('#address1').val('1 Main St.');
     $('#address2').val('');
