@@ -9,8 +9,8 @@
 
 function Block() {
     $('#allinfodiv').block({
-        message: 'Verifying Your Information',
-        class: 'blockstyle'
+        "message": 'Verifying Your Information',
+        "class": 'blockstyle'
     });
 }
 
@@ -41,22 +41,26 @@ function OnVerify() {
     x.authorizationRequest = args;
 
     $.ajax({    
-        url: 'home/verify',
+        url: $('#verifybutton').attr("action"),
         type: 'POST',
         data: JSON.stringify(x),
         dataType: 'json',
         contentType: 'application/json; charset=utf-8',
         success: OnVerifySuccess,
-        error: function () {
-            $('#allinfodiv').unblock();
-        }
+        error: OnVerifyError
     });
 }
 
-function OnVerifySuccess(authResponse){
+function OnVerifyError(failureResponse) {
+    $('#allinfodiv').unblock();
+    $('#notemessagediv').html('<b>Technical Issues</b> are preventing us from processing the verification. Please send an email to <a href=\'mailto:support@opspark.com\'>OpSpark Support</a> explaining the issue. We will attempt to resolve the issue and get back to you promptly.');
+    $('#notemessagediv').effect("pulsate", { times: 1 }, 1000);
+}
+
+function OnVerifySuccess(successResponse){
     $('#allinfodiv').unblock();
 
-    if (authResponse.IsSuccess) {
+    if (successResponse.IsSuccess) {
         $('#notemessagediv').html('<b>Thank You!</b> Your credentials have been verified. Credit card related information you provide is used only to verify your identity and is not persisted on our systems or used by us in any other way. Read more in our <a href="http://www.opspark.com/Home/PrivacyPolicy">privacy policy</a>');
     }
     else {
@@ -64,7 +68,6 @@ function OnVerifySuccess(authResponse){
     }
 
     $('#notemessagediv').effect("pulsate", { times: 1 }, 1000);
-
 }
 
 function OnClear() {
